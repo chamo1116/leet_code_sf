@@ -98,6 +98,8 @@ It is `O(n+d)` where `n` is the length of the input string and `d` is number of 
 (26 + 10 + 128 + 1) = 165.
 ```
 
+`d` becomes irrelevant if `n` starts to increase or tends to infinite because it is a constant so for a large input would be `O(n)`
+
 ### Space complexity.
 It is O(d) where d was calculated previously.
 

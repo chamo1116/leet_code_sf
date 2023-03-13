@@ -1,4 +1,4 @@
-# Leetcode exercise.
+# Leetcode Exercise.
 
 ## Statement.
 
@@ -37,7 +37,7 @@ Notice that the answer must be a substring, "pwke" is a subsequence and not a su
 s consists of English letters, digits, symbols and spaces.
 
 
-## Detailed Solution.
+## Detailed Implementation.
 
 - Before implement the solution first validate the constraints with the following code:
 
@@ -78,9 +78,21 @@ seen_characters[current_character] = current_index
 max_length = max(max_length, current_index - start + 1)
 ```
 
+## Performance.
+
+### Time complexity.
+It is `O(n+d)` where `n` is the length of the input string and `d` is number of characters in input string. In this case, the  string consists of lowercase English characters, digits, ascii symbols and spaces, so `d` would be:
+
+```
+(26 + 10 + 128 + 1) = 165.
+```
+
+### Space complexity.
+It is O(d) where d was calculated previously.
 
 
-## Run solution.
+
+## Run The Solution.
 
 The solution of this problem was implemented in a cli and it's dockerized. 
 

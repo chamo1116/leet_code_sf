@@ -1,4 +1,6 @@
-def get_max_substring(s):
+def get_max_length_of_substring(s: str) -> int:
+    """Returns the maximium length of the substrings of s without repeating characters."""
+
     # Validate contraints
     if not s or len(s) > 50000:
         raise ValueError("The length of the string should be less than 50000")

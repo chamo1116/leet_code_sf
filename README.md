@@ -48,7 +48,7 @@ s consists of English letters, digits, symbols and spaces.
 
 ## Detailed Implementation.
 
-- Before implement the solution first validate the constraints with the following code:
+- Before implementing the solution first validate the constraints with the following code:
 
 ```
 # Validate contraints
@@ -67,7 +67,7 @@ max_length = 0
 start = 0
 ```
 
-- Start the iteration and check if we already seen the element, if so, change the start point calculating the maximium with itself and the index where was found plus 1 (because indexes in python start in 0):
+- Start the iteration and check if the element exists in memory, if so, change the start point calculating the maximium between the previous value and the index where was found plus 1 (because indexes in python start in 0):
 
 ```
 # Checking if we have already seen the element
